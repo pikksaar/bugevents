@@ -1,0 +1,6 @@
+int bajo=10000;
+
+
+
+
+cout<<"daddsafa";
