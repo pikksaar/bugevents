@@ -1,0 +1,29 @@
+{% extends "admin/base_site.html" %}
+{% block extrahead %}
+    <style>
+        #branding h1, #branding h1 a:link, #branding h1 a:visited {
+            color: #fff;
+            font-weight: bold;
+        }
+        #main {
+            background-color: #277597;
+        }
+        #content h1 {
+            color: #fff;
+        }
+        #toggle-nav-sidebar {
+            display: none;
+        }
+        #nav-sidebar {
+            background-color: #277597;
+            border-top: 10px solid transparent;
+            border-right: 1px solid #277597;
+        }
+        .main.shifted > #nav-sidebar {
+            left: 10px;
+        }
+        #changelist {
+            background-color: #277597;
+        }
+    </style>
+{% endblock %}
