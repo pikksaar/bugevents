@@ -4,7 +4,7 @@ from django.utils import timezone
 class Ambiente(models.Model):
     nombre = models.CharField(max_length=80)
     ubicacion = models.CharField(max_length=80)
-    aforo = models.PositiveIntegerField(default=40)
+    aforo = models.IntegerField(default=40)
 
     def __str__(self):
         return f"{self.nombre}: Sala {self.ubicacion} con un aforo de {self.aforo} personas."
