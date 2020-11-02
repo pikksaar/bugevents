@@ -68,7 +68,7 @@ Clase relacionada -> CD44 [Entity]
 '''
 class Turno(models.Model):
     actividad = models.ForeignKey(Actividad, on_delete=models.CASCADE)
-    ambiente = models.ForeignKey(Ambiente, on_delete=models.CASCADE)
+    ambiente = models.ForeignKey(Ambiente)
     nombre = models.CharField(max_length=15)
     hora_inicio = models.TimeField()
     hora_fin = models.TimeField()
