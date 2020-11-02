@@ -72,12 +72,13 @@ class Turno(models.Model):
     nombre = models.CharField(max_length=15)
     hora_inicio = models.TimeField()
     hora_fin = models.TimeField()
+    ponentes = models.ManyToManyField(Ponente)
 
     def __str__(self):
         return f"{self.nombre}"
 
 '''
-Materiales -> Entidad del sistema 
+Material -> Entidad del sistema 
 Clase relacionada -> CD37 [Entity]
 '''
 class Material(models.Model):
